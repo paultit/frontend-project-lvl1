@@ -6,3 +6,8 @@
 ## Setup
 
 $ make install
+
+## List games
+
+1. brain-even
+[![asciicast](https://asciinema.org/a/blRkRTsFWMX5DKfgCI5yv65JY.png)](https://asciinema.org/a/blRkRTsFWMX5DKfgCI5yv65JY)

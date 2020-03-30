@@ -13,7 +13,10 @@ $ make install
 [![asciicast](https://asciinema.org/a/tcj21JHP4H0zngqtpiaznJvfR.png)](https://asciinema.org/a/tcj21JHP4H0zngqtpiaznJvfR)
 
 2. brain-calc
+[![asciicast](https://asciinema.org/a/Xa0ucWhxeZT38rcSBZD8Ohvmm.png)](https://asciinema.org/a/Xa0ucWhxeZT38rcSBZD8Ohvmm)
+
+3. brain-gcd
 [![asciicast](https://asciinema.org/a/oZ7pq9pkgwRU7auceJH9B4Xvj.png)](https://asciinema.org/a/oZ7pq9pkgwRU7auceJH9B4Xvj)
 
-2. brain-gcd
-[![asciicast](https://asciinema.org/a/Xa0ucWhxeZT38rcSBZD8Ohvmm.png)](https://asciinema.org/a/Xa0ucWhxeZT38rcSBZD8Ohvmm)
+4. brain-progression
+[![asciicast](https://asciinema.org/a/JWzAvRK2BfZVhuUYqUl9fxXW0.png)](https://asciinema.org/a/JWzAvRK2BfZVhuUYqUl9fxXW0)

@@ -10,4 +10,7 @@ $ make install
 ## List games
 
 1. brain-even
-[![asciicast](https://asciinema.org/a/blRkRTsFWMX5DKfgCI5yv65JY.png)](https://asciinema.org/a/blRkRTsFWMX5DKfgCI5yv65JY)
+[![asciicast](https://asciinema.org/a/tcj21JHP4H0zngqtpiaznJvfR.png)](https://asciinema.org/a/tcj21JHP4H0zngqtpiaznJvfR)
+
+2. brain-calc
+[![asciicast](https://asciinema.org/a/Xa0ucWhxeZT38rcSBZD8Ohvmm.png)](https://asciinema.org/a/Xa0ucWhxeZT38rcSBZD8Ohvmm)

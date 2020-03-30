@@ -6,13 +6,13 @@ const random = (start, end) => Math.floor((Math.random() * end) + start);
 
 const greeting = () => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name?');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 };
 
 const game = (getQuestionAndCorrectAnswer, rule) => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name?');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(rule);
   for (let i = 0; i < numOfRounds; i += 1) {

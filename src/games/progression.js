@@ -1,6 +1,7 @@
 import { game, random } from '../index.js';
 
 const lengthProgression = 10;
+const rule = 'What number is missing in the progression?';
 const getProgression = (startProgression, stepProgression, posEl) => {
   let progression = '';
   let currentElProgression = startProgression;
@@ -14,7 +15,6 @@ const getProgression = (startProgression, stepProgression, posEl) => {
   }
   return progression.trim();
 };
-const rule = 'What number is missing in the progression?';
 
 const progression = () => {
   const startProgression = random(1, 100);

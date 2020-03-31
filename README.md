@@ -20,3 +20,6 @@ $ make install
 
 4. brain-progression
 [![asciicast](https://asciinema.org/a/JWzAvRK2BfZVhuUYqUl9fxXW0.png)](https://asciinema.org/a/JWzAvRK2BfZVhuUYqUl9fxXW0)
+
+5. brain-prime
+[![asciicast](https://asciinema.org/a/NbZovMu5AXZZ4KOhXUglUXYBD.png)](https://asciinema.org/a/NbZovMu5AXZZ4KOhXUglUXYBD)

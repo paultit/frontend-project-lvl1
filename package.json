@@ -1,7 +1,7 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
-  "description": "",
+  "description": "brain-games",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,14 +11,18 @@
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js"
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paultit/frontend-project-lvl1.git"
   },
   "type": "module",
-  "author": "Titarenko Pavlo",
+  "author": {
+    "name": "Titarenko Pavlo",
+    "email": "titarenko.pavel@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/paultit/frontend-project-lvl1/issues"

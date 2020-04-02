@@ -1,30 +1,32 @@
 import pairs from '@hexlet/pairs';
-import { game, random } from '../index.js';
+import toGame from '../index.js';
+import getRandom from '../utils.js';
 
 const rule = 'What is the result of the expression?';
+const arrOfOperations = ['+', '-', '*'];
 const getActionAndCorrectAnswer = (num1, num2) => {
-  switch (random(1, 3)) {
+  switch (getRandom(1, arrOfOperations.length)) {
     case 1:
-      return pairs.cons('+', num1 + num2);
+      return pairs.cons(arrOfOperations[0], num1 + num2);
     case 2:
-      return pairs.cons('-', num1 - num2);
+      return pairs.cons(arrOfOperations[1], num1 - num2);
     case 3:
-      return pairs.cons('*', num1 * num2);
+      return pairs.cons(arrOfOperations[2], num1 * num2);
     default:
   }
-  return pairs.cons('+', num1 + num2);
+  return pairs.cons(arrOfOperations[0], num1 + num2);
 };
-const calc = () => {
-  const num1 = random(1, 100);
-  const num2 = random(1, 100);
+const getQuestionAndCorrectAnswerCalc = () => {
+  const num1 = getRandom(1, 100);
+  const num2 = getRandom(1, 100);
   const actionAndCorrectAnswer = getActionAndCorrectAnswer(num1, num2);
   const question = `${num1} ${pairs.car(actionAndCorrectAnswer)} ${num2}`;
   const correctAnswer = pairs.cdr(actionAndCorrectAnswer);
   return [question, String(correctAnswer)];
 };
 
-const start = () => {
-  game(calc, rule);
+const run = () => {
+  toGame(getQuestionAndCorrectAnswerCalc, rule);
 };
 
-export default start;
+export default run;

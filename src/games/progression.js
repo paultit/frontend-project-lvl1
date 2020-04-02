@@ -1,32 +1,31 @@
-import { game, random } from '../index.js';
+import toGame from '../index.js';
+import getRandom from '../utils.js';
 
 const lengthProgression = 10;
 const rule = 'What number is missing in the progression?';
-const getProgression = (startProgression, stepProgression, posEl) => {
+const getQuestionProgression = (startProgression, stepProgression, posEl) => {
   let progression = '';
-  let currentElProgression = startProgression;
   for (let i = 0; i < lengthProgression; i += 1) {
+    let elProgression = startProgression + stepProgression * i;
     if (i === posEl) {
-      progression += '.. ';
-    } else {
-      progression += `${currentElProgression} `;
+      elProgression = '.. ';
     }
-    currentElProgression += stepProgression;
+    progression = `${progression}${elProgression} `;
   }
   return progression.trim();
 };
 
-const progression = () => {
-  const startProgression = random(1, 100);
-  const stepProgression = random(1, 10);
-  const posEl = random(0, 9);
-  const question = getProgression(startProgression, stepProgression, posEl);
+const getQuestionAndCorrectAnswerProg = () => {
+  const startProgression = getRandom(1, 100);
+  const stepProgression = getRandom(1, 10);
+  const posEl = getRandom(0, lengthProgression - 1);
+  const question = getQuestionProgression(startProgression, stepProgression, posEl);
   const correctAnswer = startProgression + (stepProgression * posEl);
   return [question, String(correctAnswer)];
 };
 
-const start = () => {
-  game(progression, rule);
+const run = () => {
+  toGame(getQuestionAndCorrectAnswerProg, rule);
 };
 
-export default start;
+export default run;

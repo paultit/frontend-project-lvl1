@@ -1,13 +1,13 @@
-import toGame from '../index.js';
+import playGame from '../index.js';
 import getRandom from '../utils.js';
 
-const lengthProgression = 10;
+const progressionLength = 10;
 const rule = 'What number is missing in the progression?';
-const getQuestionProgression = (startProgression, stepProgression, posEl) => {
+const getQuestion = (startProgression, stepProgression, posHiddenElementProgression) => {
   let progression = '';
-  for (let i = 0; i < lengthProgression; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     let elProgression = startProgression + stepProgression * i;
-    if (i === posEl) {
+    if (i === posHiddenElementProgression) {
       elProgression = '.. ';
     }
     progression = `${progression}${elProgression} `;
@@ -15,17 +15,17 @@ const getQuestionProgression = (startProgression, stepProgression, posEl) => {
   return progression.trim();
 };
 
-const getQuestionAndCorrectAnswerProg = () => {
+const getGameData = () => {
   const startProgression = getRandom(1, 100);
   const stepProgression = getRandom(1, 10);
-  const posEl = getRandom(0, lengthProgression - 1);
-  const question = getQuestionProgression(startProgression, stepProgression, posEl);
-  const correctAnswer = startProgression + (stepProgression * posEl);
+  const posHiddenElementProgression = getRandom(0, progressionLength - 1);
+  const question = getQuestion(startProgression, stepProgression, posHiddenElementProgression);
+  const correctAnswer = startProgression + (stepProgression * posHiddenElementProgression);
   return [question, String(correctAnswer)];
 };
 
 const run = () => {
-  toGame(getQuestionAndCorrectAnswerProg, rule);
+  playGame(getGameData, rule);
 };
 
 export default run;

@@ -22,8 +22,6 @@ const getGameData = () => {
   return [question, correctAnswer];
 };
 
-const run = () => {
-  playGame(getGameData, rule);
-};
+const run = () => playGame(getGameData, rule);
 
 export default run;

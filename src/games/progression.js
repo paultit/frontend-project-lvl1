@@ -4,15 +4,15 @@ import getRandom from '../utils.js';
 const progressionLength = 10;
 const rule = 'What number is missing in the progression?';
 const getQuestion = (startProgression, stepProgression, posHiddenElementProgression) => {
-  let progression = '';
+  let questionGame = '';
   for (let i = 0; i < progressionLength; i += 1) {
     let elProgression = startProgression + stepProgression * i;
     if (i === posHiddenElementProgression) {
       elProgression = '.. ';
     }
-    progression = `${progression}${elProgression} `;
+    questionGame = `${questionGame}${elProgression} `;
   }
-  return progression.trim();
+  return questionGame.trim();
 };
 
 const getGameData = () => {
@@ -24,8 +24,6 @@ const getGameData = () => {
   return [question, String(correctAnswer)];
 };
 
-const run = () => {
-  playGame(getGameData, rule);
-};
+const run = () => playGame(getGameData, rule);
 
 export default run;
